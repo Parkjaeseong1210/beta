@@ -1,0 +1,15 @@
+inFp = None
+inStr =""
+
+inFp = open("C:\\Users\\lulla\\OneDrive\\Desktop\\code\\과제\\텍스트\\1","r",encoding="UTF8")
+
+count= int(1)
+
+while True:
+    inStr=inFp.readline()
+    if inStr == "":
+        break;
+    print("%d: %s"%(count, inStr), end="")
+    count += 1
+
+inFp.close()
